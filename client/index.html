@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Streaming Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="grid grid-cols-6">
+      <form class="grid col-start-3 col-end-5 space-y-5">
+        <div>
+          <label class="block" for="title">Title</label>
+          <input class="border w-full" id="title" type="text" />
+        </div>
+
+        <div>
+          <label class="block"for="description">Description</label>
+          <textarea class="border w-full" id="description" type="text"></textarea>
+        </div>
+
+        <div class="border border-black p-5">
+          <button
+            class="border rounded px-3 py-2 bg-indigo-500 text-white"
+            id="upload"
+            type="button"
+          >
+            Upload Video
+          </button>
+          <input class="hidden" type="file" accept="video/*" />
+        </div>
+
+        <button
+          class="border rounded px-3 py-2 bg-indigo-500 text-white"
+          type="button"
+        >
+          Submit
+        </button>
+      </form>
+    </main>
+
+    <script src="./client.js"></script>
+  </body>
+</html>
